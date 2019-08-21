@@ -34,6 +34,7 @@ class Outline {
 
 	// add an on-screen point
 	addPoint(x, y){
+		console.log("adding point", x, y);
 		this.current.addPoint(x,y);
 		var bounds = this.bounds;
 		if (!bounds) { bounds = this.bounds = [x,y,x,y]; }
